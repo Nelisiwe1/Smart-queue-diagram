@@ -1,4 +1,6 @@
 # Smart-queue-diagram
+
+```mermaid
 flowchart LR
     Student([Student]) --> UI[Web/Mobile UI]
     Staff([Staff]) --> UI
@@ -13,3 +15,4 @@ flowchart LR
         Notif --> DB
         AI --> DB
     end
+    ```
