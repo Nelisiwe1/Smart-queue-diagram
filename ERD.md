@@ -4,7 +4,8 @@ erDiagram
     USERS ||--o{ NOTIFICATIONS : receives
     TICKETS }o--|| COUNTERS : served_at
     TICKETS }o--|| FEEDBACK : has
-    COUNTERS ||--o{ STAFF : assigned_to}
+    COUNTERS ||--oSTAFF -->|assigned_to| USERS
+
 
     USERS {
         string user_id PK
