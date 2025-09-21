@@ -17,7 +17,7 @@ flowchart LR
     end
     
 ```mermaid
-   usecaseDiagram
+  usecaseDiagram
     actor Student
     actor Staff
     actor Admin
@@ -33,5 +33,6 @@ flowchart LR
     Admin --> (Generate Reports)
     Admin --> (Manage Users)
     Admin --> (Configure Queue Settings)
+
 
 
