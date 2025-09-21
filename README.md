@@ -15,9 +15,7 @@ flowchart LR
         Notif --> DB
         AI --> DB
     end
-    ```
-    
-```mermaid
+  
   usecaseDiagram
     actor Student
     actor Staff
