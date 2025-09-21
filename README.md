@@ -16,3 +16,16 @@ flowchart LR
         AI --> DB
     end
     
+    ```mermaid
+    usecaseDiagram
+    actor Student
+    actor Staff
+    actor Admin
+
+    Student --> (Book Appointment)
+    Student --> (View Queue Status)
+    Staff --> (Serve Ticket)
+    Staff --> (Update Queue Info)
+    Admin --> (Generate Reports)
+    Admin --> (Manage Staff)
+
