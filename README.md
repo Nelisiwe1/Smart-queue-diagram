@@ -1,37 +1,19 @@
 # Smart-queue-diagram
 
 ```mermaid
-flowchart LR
-    Student([Student]) --> UI[Web/Mobile UI]
-    Staff([Staff]) --> UI
-    Admin([Admin]) --> UI
+flowchart TB
+    Student --> Book[Book Appointment]
+    Student --> View[View Queue Status]
+    Student --> Cancel[Cancel Appointment]
 
-    subgraph "Smart Queue Management System"
-        UI --> API[API Gateway]
-        API --> Queue[Queue Service]
-        API --> Notif[Notification Service]
-        API --> AI[AI/Analytics Service]
-        Queue --> DB[(Database)]
-        Notif --> DB
-        AI --> DB
-    end
-  
-  usecaseDiagram
-    actor Student
-    actor Staff
-    actor Admin
+    Staff --> Serve[Serve Ticket]
+    Staff --> Update[Update Queue Info]
+    Staff --> Complete[Mark Ticket Completed]
 
-    Student --> (Book Appointment)
-    Student --> (View Queue Status)
-    Student --> (Cancel Appointment)
+    Admin --> Reports[Generate Reports]
+    Admin --> Manage[Manage Users]
+    Admin --> Config[Configure Queue Settings]
 
-    Staff --> (Serve Ticket)
-    Staff --> (Update Queue Info)
-    Staff --> (Mark Ticket Completed)
-
-    Admin --> (Generate Reports)
-    Admin --> (Manage Users)
-    Admin --> (Configure Queue Settings)
 
 
 
