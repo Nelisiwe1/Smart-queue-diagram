@@ -14,7 +14,7 @@ flowchart LR
         Queue --> DB[(Database)]
         Notif --> DB
         AI --> DB
-    end
+
 
 
 User Smartphone → QR Scan → Frontend App → REST API → Backend Server → Database
@@ -23,4 +23,4 @@ User Smartphone → QR Scan → Frontend App → REST API → Backend Server →
 Backend Server → Notification Service → User Alerts
 Admin Portal → Backend Server → Queue Management
 
-    
+end    
